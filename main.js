@@ -28,7 +28,7 @@ function adicionaLinha(){
         telefones.push(telefoneForm.value)     
 
     let linha = `<tr>`
-    linha += `<td>${nomeForm.value}</td>`
+    linha += `<td>${nomeForm.value.charAt(0).toUpperCase() + nomeForm.value.slice(1).toLowerCase()}</td>`//charat primeira letra maiuscula,slice resto em minusculo
     linha += `<td>${telefoneForm.value}</td>`
     linha += `</tr>`
 
